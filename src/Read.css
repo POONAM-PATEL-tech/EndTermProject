@@ -1,0 +1,9 @@
+.table th {
+    color: rgb(35, 88, 124);
+    font-weight: 1000;
+}
+
+.table td {
+    color: rgb(43, 43, 226);
+    font-weight: bold;
+}

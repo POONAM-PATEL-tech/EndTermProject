@@ -1,0 +1,44 @@
+#home {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.box-left h1 {
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+}
+
+.box-right {
+    position: relative;
+    padding: 0 2.5em;
+}
+
+@media screen and (max-width:580px) {
+    .box {
+        display: grid;
+        width: 400px;
+    }
+    img {
+        max-width: 150%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .box {
+        display: grid;
+        width: 400px;
+    }
+    img {
+        max-width: 150%;
+    }
+}
+
+.box-left h1 {
+    color: grey;
+}

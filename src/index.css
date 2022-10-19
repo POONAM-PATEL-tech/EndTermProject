@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,280 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Titan+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.menu_active {
+    font-weight: bold;
+    border-bottom: 1px solid #f58207;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+.navbar NavLink {
+    margin-left: 100px;
+}
+
+.navbar a:hover {
+    color: #0083A3;
+}
+
+@media (max-width:991px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .menu_active {
+        font-weight: bold;
+        border-bottom: none;
+    }
+}
+
+#header {
+    width: 100%;
+    height: 80vh;
+    margin-top: 70px;
+}
+
+
+/* Create */
+
+#heading {
+    position: absolute;
+    top: 10vh;
+    left: 40vh;
+}
+
+.form1 {
+    position: absolute;
+    top: 20vh;
+    left: 40vh;
+    height: 400px;
+    width: 400px;
+    margin-top: 0%;
+    margin-left: 15%;
+    /* background-color: #93c7e0; */
+    /* box-shadow: 5px 10px #0c4ca5; */
+}
+
+.container .form1 input {
+    box-shadow: 2px 1px rgb(23, 23, 162);
+}
+
+@media screen and (max-width :800px) {
+    .form1 {
+        margin-left: 0px;
+        width: 40%;
+        /* background-color: #cad2d6; */
+    }
+}
+
+#header h1 {
+    margin: 0 0 10px 0;
+    font-size: 70px;
+    font-weight: 550;
+    color: rgb(15, 15, 15);
+}
+
+.btn-success {
+    background-color: #355e9f;
+    border-radius: 100px;
+    /* box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px; */
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-success:hover {
+    box-shadow: 1px 1px rgb(86, 112, 143);
+    /* transform: scale(1.05) rotate(-1deg); */
+    background-color: green;
+}
+
+.btn-danger {
+    background-color: #355e9f;
+    border-radius: 100px;
+    /* box-shadow: rgba(241, 239, 239, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px; */
+    color: rgb(237, 242, 244);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-danger:hover {
+    box-shadow: 1px 1px rgb(143, 86, 86);
+    /* transform: scale(1.05) rotate(-1deg); */
+    background-color: #ec1919;
+}
+
+#header .brand-name {
+    color: #3498db;
+}
+
+.form-label {
+    color: #000080;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#hedaer h2 {
+    color: #e31616;
+    font-size: 24px;
+}
+
+.navbar-brand {
+    color: #3498db;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+
+/* it is for login create heading */
+
+
+/* #heading {
+    color: #0c4ca5;
+    font-size: 40px;
+    font-family: 'Oswald', a;
+    margin-left: 15%;
+    margin-top: 2%;
+    position: absolute;
+} */
+
+#header .btn-get-started {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #3498db;
+    border: 2px solid #3498db;
+    text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.header-img {
+    text-align: right;
+}
+
+.btn2 {
+    background-color: #1994ec;
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    padding: 16px 21px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+/* .btn2:before {
+    background-color: initial;
+    background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+    border-radius: 125px;
+    content: "";
+    height: 50%;
+    left: 4%;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    transition: all .3s;
+    width: 92%;
+} */
+
+.btn2:hover {
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .btn2 {
+        padding: 16px 48px;
+    }
+}
+
+
+/* #header .animated { */
+
+
+/* animation: up-down 2s ease-in-out infinite alternate-reverse both; */
+
+
+/* } */
+
+
+/* 
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+} */
+
+
+/* @keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+} */
+
+.read_img {
+    height: 5rem;
+    width: 7rem;
 }
